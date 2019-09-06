@@ -1,0 +1,434 @@
+.main-menu ul {
+  list-style: none;
+}
+
+.hero-section {
+  background-image: url("../images/header/bg.jpg");
+  height: auto;
+  padding-bottom: 150px;
+  min-width: 430px;
+}
+.course-section {
+  background-image: url("../images/header/bgCourse.jpg");
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding-bottom: 150px;
+  min-width: 430px;
+}
+.teacher-section {
+  background-image: url("../images/header/bgTeachers.jpg");
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding-bottom: 150px;
+  min-width: 430px;
+  background-color: rgb(155, 147, 147);
+  background-blend-mode: screen;
+}
+.fees-section {
+  background-image: url("../images/header/bgFees.png");
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding-bottom: 150px;
+  min-width: 430px;
+  background-color: #9b4343;
+  background-blend-mode: screen;
+}
+.contact-section {
+  background-image: url("../images/header/bgContact.jpg");
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding-bottom: 150px;
+  min-width: 430px;
+  background-color: rgb(92, 46, 46);
+  background-blend-mode: screen;
+}
+.footer {
+  min-width: 430px;
+}
+.log a {
+  border-radius: 5%;
+  background: none;
+  border: 1px solid #d82a4e;
+}
+.log a:hover {
+  background: #d82a4e;
+}
+.hero-section form button {
+  border-radius: 5%;
+  background: none;
+  border: 1px solid #d82a4e;
+}
+.hero-section form button:hover {
+  background: #d82a4e;
+}
+.hero-section form .next {
+  border-radius: 5%;
+  background: none;
+  border: 1px solid #1d9423;
+}
+.hero-section form .next:hover {
+  background: #1d9423;
+}
+.contact-section form button {
+  border-radius: 5%;
+  background: none;
+  border: 1px solid #1d9423;
+}
+.contact-section form button:hover {
+  background: #1d9423;
+}
+.contact-section h1,
+.contact-section p {
+  color: white !important;
+}
+.heading-course,
+.para-course {
+  color: #474747 !important;
+  font-size: 20px;
+  font-weight: bold;
+}
+.fees-section p,
+.fees-section h1 {
+  color: rgb(46, 0, 0) !important;
+}
+.set-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+.fees-section p {
+  margin-bottom: 20px !important;
+}
+.main-menu ul li {
+  display: inline;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../font/Raleway-Regular.ttf");
+}
+* {
+  font-family: "Raleway";
+}
+
+.home-body h2,
+.home-body h3 {
+  font-size: 40px;
+  font-weight: 1000;
+}
+.hero-text h1,
+.course-text h1 {
+  font-size: 60px;
+  font-weight: 1000;
+  margin-bottom: 100px;
+}
+.course-text h1 {
+  margin-bottom: 20px !important;
+}
+.text-white h1 {
+  color: #108a38;
+}
+.hero-text h2 {
+  font-size: 60px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.teacher-section h1,
+.teacher-section p {
+  color: rgb(58, 3, 3) !important;
+}
+.TeacherStyle p {
+  padding-top: 50px;
+  padding-bottom: 76px;
+}
+.TeacherStyle:hover,
+.TeacherStyle p:hover {
+  background: rgb(196, 97, 97);
+  color: white !important;
+  transition-duration: 1s;
+  border-top-left-radius: 0% !important;
+  border-top-right-radius: 0% !important;
+  border-radius: 5%;
+  cursor: pointer;
+}
+.TeacherStyle {
+  border-top: 30px solid rgb(104, 21, 21);
+  border-radius: 5%;
+  text-align: center;
+  width: 250px;
+  height: 180px;
+  padding: 0px !important;
+}
+p {
+  color: rgb(203, 216, 203);
+}
+.text-white h2,
+.text-white li,
+.text-white a {
+  color: rgb(203, 216, 203);
+}
+h2 {
+  font-size: 36px;
+}
+
+h2 {
+  margin: 0;
+  font-weight: 600;
+  color: #474747;
+}
+.signupForm {
+  text-align: center;
+  padding-bottom: 100px;
+}
+.signupForm {
+  max-width: 552px;
+  width: 100%;
+  min-height: auto;
+  border-radius: 5px;
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+  margin: 0 auto;
+}
+.react-tel-input {
+  padding: 0 0px !important;
+}
+.signupForm .css-yk16xz-control,
+.css-1g48xl4-IndicatorsContainer,
+.css-w8afj7-Input,
+.css-w8afj7-Input div,
+.css-w8afj7-Input input,
+.css-1pahdxg-control {
+  height: 53px !important;
+  margin-bottom: 20px;
+}
+.signupForm select:valid {
+  color: black;
+}
+.signupForm input[type="text"],
+.signupForm input[type="email"],
+.signupForm input[type="password"],
+.signupForm .react-tel-input,
+.signupForm input[type="tel"],
+.signupForm select {
+  height: 53px !important;
+  width: 100% !important;
+  margin-bottom: 20px;
+  padding: 0 30px;
+  margin-right: 22px;
+  float: left;
+  border: none;
+  color: black;
+  background: white;
+  font-family: "arial", "serif" !important;
+  font-size: 18px !important;
+}
+.signupForm textarea {
+  width: 100% !important;
+  margin-bottom: 20px;
+  padding: 0 30px;
+  margin-right: 22px;
+  float: left;
+  border: none;
+  color: black;
+  background: white;
+  font-family: "arial", "serif" !important;
+  font-size: 18px !important;
+}
+select:invalid {
+  color: gray !important;
+}
+.signupForm .site-btn {
+  min-width: 214px;
+}
+.hero-text {
+  text-align: center;
+  padding-top: 340px;
+  margin-bottom: 105px;
+}
+.course-text {
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 105px;
+}
+.main-menu ul li {
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
+  margin-left: 45px;
+  font-weight: 600;
+  padding: 20px 0 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.log a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.footer p li {
+  color: white !important;
+  list-style: none;
+  display: inline;
+  font-weight: bold;
+}
+.main-menu ul li:hover,
+.footer p li:hover,
+.footer p li a:hover {
+  color: red !important;
+  list-style: none;
+  transition-duration: 0.5s;
+}
+.header-btn {
+  min-width: 160px;
+}
+.header-btn {
+  float: right;
+  margin-right: 0;
+}
+.site-btn {
+  display: inline-block;
+  min-width: 196px;
+  text-align: center;
+  border: none;
+  padding: 15px 10px;
+  font-weight: 600;
+  font-size: 16px;
+  position: relative;
+  color: #fff;
+  cursor: pointer;
+  background: #d82a4e;
+}
+.nav-switch {
+  display: none;
+}
+.log {
+  margin-top: 30px;
+}
+.next {
+  display: none;
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .header-btn {
+    min-width: 160px;
+  }
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .main-menu ul li {
+    margin-left: 38px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hero-text,
+  .course-text {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .course-text p {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .home-body h2,
+  .home-body h3 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .hero-text h1,
+  .hero-text h2,
+  .course-text h1 {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .signupForm {
+    padding-bottom: 100px;
+  }
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .main-menu ul li {
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .main-menu ul li {
+    display: block;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .main-menu ul li a {
+    margin-left: 0;
+    padding: 17px 25px;
+    border-bottom: 1px solid #e8e8e8;
+    display: block;
+    color: #e8e8e8;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .main-menu {
+    background: #474747;
+    margin-top: 22px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    display: none;
+    z-index: 999;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .header-btn {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .nav-switch {
+    display: block;
+    float: right;
+    color: #333;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    background: #d82a4e;
+    border: none;
+    text-align: center;
+    padding-top: 2px;
+    margin-top: 30px;
+    -webkit-box-shadow: 0 0 13px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.25);
+  }
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .header-btn {
+    min-width: 90px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .next {
+    display: inline-block;
+    margin-left: 20px;
+    background: green;
+  }
+}
+@media only screen and (max-width: 494px) {
+  .next {
+    display: inline-block;
+    margin-left: 0px;
+    margin-top: 20px;
+    background: green;
+  }
+}

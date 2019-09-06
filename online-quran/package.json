@@ -1,0 +1,56 @@
+{
+  "name": "todo-movie-redux-external-api",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "@material-ui/core": "^4.3.2",
+    "bootstrap": "^4.3.1",
+    "font-awesome": "^4.7.0",
+    "fontawesome": "^5.6.3",
+    "react": "^16.8.2",
+    "react-bootstrap": "^1.0.0-beta.9",
+    "react-dom": "^16.8.2",
+    "react-phone-input-2": "^2.9.4",
+    "react-phone-number-input": "^2.3.19",
+    "react-redux": "^6.0.0",
+    "react-responsive-carousel": "^3.1.49",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "^3.1.1",
+    "react-scroll": "^1.7.12",
+    "react-select": "^3.0.4",
+    "react-select-country-list": "^2.0.1",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "tachyons": "^4.11.1",
+    "validator": "^11.1.0"
+  },
+  "scripts": {
+    "start": "env-cmd -f src/config/dev.env react-scripts start",
+    "build": "env-cmd -f src/config/dev.env react-scripts build",
+    "test": "env-cmd -f src/config/dev.env react-scripts test",
+    "eject": "env-cmd -f src/config/dev.env react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:3001",
+  "devDependencies": {
+    "env-cmd": "^10.0.1"
+  }
+}

@@ -1,0 +1,88 @@
+.backSection {
+  background-image: url("../images/header/bgLoginBack.jpg");
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-color: #011d58;
+  background-blend-mode: screen;
+}
+.signin-section {
+  background-image: url("../images/header/bgLoginBack.jpg");
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding-bottom: 150px;
+  min-width: 430px;
+  max-width: 552px;
+  width: 100%;
+  min-height: auto;
+  border-radius: 5px;
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+  background-color: #00091b;
+  background-blend-mode: screen;
+  margin: 0 auto;
+}
+
+.signin-section h1,
+.signin-section p {
+  color: white !important;
+}
+.signin-section form button {
+  border-radius: 5%;
+  background: none;
+  border: 1px solid #1d9423;
+}
+.signin-section form button:hover {
+  background: #1d9423;
+}
+#heading {
+  color: silver !important;
+}
+.signin-section h1 {
+  text-align: center;
+}
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  font-family: "arial", "serif" !important;
+  font-size: 18px !important;
+}
+#heading:hover {
+  color: red !important;
+}
+.scrollBtnBottom {
+  top: 140px;
+}
+.scrollBtnTop {
+  bottom: 50px;
+}
+.buttons {
+  color: white;
+}
+.forgot:hover {
+  color: rgb(50, 158, 0) !important;
+}
+.scrollBtnTop:hover,
+.scrollBtnBottom:hover {
+  background: rgb(50, 158, 0);
+}
+.scrollBtnTop,
+.scrollBtnBottom {
+  right: 15px;
+  background: #d82a4e;
+  box-shadow: 4px;
+  padding-bottom: 50px;
+  border-radius: 100%;
+  width: 40px;
+  height: 30px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  line-height: 50px;
+
+  box-shadow: 10px;
+  position: fixed;
+  cursor: pointer;
+}
