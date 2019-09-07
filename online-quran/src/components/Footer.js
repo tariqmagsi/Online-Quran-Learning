@@ -125,6 +125,7 @@ const Footer = () => {
           </Link>
         </li>
       </p>
+      <p>Email: taealamalquran@gmail.com</p>
       <p>Copyrights &copy; All Rights Reserved Taalam AlQuran 2019 - 2030</p>
       <br />
     </div>
