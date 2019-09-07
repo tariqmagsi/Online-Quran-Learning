@@ -94,7 +94,7 @@ class LoginForm extends Component {
     this.setState({ isModelShow: false });
   };
   componentDidMount() {
-    const obj = getFromStorage("secretKey");
+    const obj = getFromStorage(process.env.REACT_APP_KEY);
 
     if (obj && obj.token) {
       const { token } = obj;
