@@ -13,7 +13,7 @@
     "server": "env-cmd -f src/config/dev.env nodemon",
     "client": "npm start --prefix online-quran",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix online-quran && npm run build --prefix online-quran"
   },
   "keywords": [],
   "author": "",
