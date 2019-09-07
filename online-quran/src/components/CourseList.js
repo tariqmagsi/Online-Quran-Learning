@@ -13,16 +13,16 @@ class CourseList extends React.Component {
     return (
       <div
         className="CourseStyle ma2 white dib pa0 grow shadow-4"
-        onMouseEnter={this.whenMouse}
-        onClick={this.whenMouseLeave}
+        onClick={this.whenMouse}
+        onDoubleClick={this.whenMouseLeave}
       >
         <img
           src={this.props.src}
           alt={this.props.name}
           height="200"
           width="300"
-          onMouseEnter={this.whenMouse}
-          onClick={this.whenMouseLeave}
+          onClick={this.whenMouse}
+          onDoubleClick={this.whenMouseLeave}
         />
         <p className="para-course" align="center">
           {this.props.name}
