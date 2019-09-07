@@ -3,14 +3,32 @@ import { withRouter } from "react-router-dom";
 import { getFromStorage } from "../utils/storage";
 import "../css/Formstyle.css";
 import LoginForm from "./Loginform";
-import { fromJSON } from "tough-cookie";
 
 class Signin extends Component {
   state = { issAdmin: false };
   componentDidMount() {
     const obj = getFromStorage(process.env.REACT_APP_KEY);
-
-    if (!(obj && obj.token)) {
+    if (obj && obj.token) {
+      const { token } = obj;
+      fetch("/profiles/login", {
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`
+        }
+      })
+        .then(res => res.json())
+        .then(json => {
+          if (json.success) {
+            if (json.profile.isAdmin) {
+              this.props.history.push("/AdminDashboard");
+            } else if (json.profile.isTeacher) {
+              this.props.history.push("/TeacherDashboard");
+            } else {
+              this.props.history.push("/Dashboard");
+            }
+          }
+        });
+    } else {
       this.setState({
         issAdmin: true
       });
