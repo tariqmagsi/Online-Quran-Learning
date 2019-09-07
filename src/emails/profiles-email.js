@@ -6,7 +6,7 @@ const sendPasswordEmail = (name, email, token) => {
     to: email,
     from: "taealamalquran@gmail.com",
     subject: "TA'ALAM ALQURAN PASSWORD RESET",
-    text: `Dear ${name}, You just created a forgot password request please click the link to proceed: http://localhost:3000/ResetPassword/${token}`
+    text: `Dear ${name}, You just created a forgot password request please click the link to proceed: http://taalam-alquran.herokuapp.com/ResetPassword/${token}`
   };
   sgmail.send(msg);
 };
