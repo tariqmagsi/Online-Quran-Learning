@@ -22,6 +22,8 @@ class Info extends Component {
           if (json.success) {
             if (json.isTeacher && json.isAdmin) {
               this.setState({ issAdmin: true });
+            } else if (!json.isTeacher && json.isAdmin) {
+              this.setState({ issAdmin: true });
             } else if (json.isTeacher) {
               this.props.history.push("/TeacherDashboard");
             } else {
