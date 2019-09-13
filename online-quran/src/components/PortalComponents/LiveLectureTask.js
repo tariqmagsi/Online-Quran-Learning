@@ -81,7 +81,7 @@ class Task extends React.Component {
                 title={`${this.state.title}`}
                 width="600"
                 height="315"
-                src={this.state.link}
+                src={`https://www.youtube.com/embed/${this.state.link}`}
                 frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
