@@ -18,7 +18,7 @@ class FeesTable extends React.Component {
 
   render() {
     return (
-      <div className="FeesTableStyle">
+      <div className="FeesTableStyle" style={{overflow:"auto"}}>
         <table className="table table-dark table-hover bg-black text-white table-striped">
           <thead className="table table-dark">
             <tr>

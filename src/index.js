@@ -13,7 +13,6 @@ app.use(wishlistRoutes);
 app.use(courseRoutes);
 
 if (process.env.NODE_ENV === "production") {
-  //Set Static Folder
   app.use(express.static("online-quran/build"));
 
   app.get("*", (req, res) => {
