@@ -1,39 +1,9 @@
 const express = require("express");
 const Profiles = require("../models/profiles");
 const routes = express.Router();
-const sharp = require("sharp");
-const multer = require("multer");
 const auth = require("../midleware/auth");
 const { sendPasswordEmail } = require("../emails/profiles-email");
 
-const fileUpload = multer({
-  limits: {
-    fileSize: 1000000
-  },
-  fileFilter(req, file, cb) {
-    if (!file.originalname.match(/\.(pdf|jpeg|png)$/)) {
-      return cb(new Error("Please upload a jpg file"));
-    }
-    cb(undefined, true);
-  }
-});
-routes.post(
-  "/profiles/myavatar",
-  auth,
-  fileUpload.single("file"),
-  async (req, res) => {
-    const buffer = await sharp(req.file.buffer)
-      .resize({ width: 200, height: 200 })
-      .png()
-      .toBuffer();
-    req.profile.avatar = buffer;
-    await req.profile.save();
-    res.send({ buffer });
-  },
-  (error, req, res, next) => {
-    res.status(400).send({ error: error.message });
-  }
-);
 routes.post("/profiles", async (req, res) => {
   try {
     const profile = await Profiles(req.body).save();
@@ -41,21 +11,10 @@ routes.post("/profiles", async (req, res) => {
 
     res.send({ success: true, profile, token });
   } catch (e) {
-    res.send({ message: "This Email is Already Exists", success: false });
+    res.send({ message: "This Email Already Exists", success: false });
   }
 });
-routes.get("/profiles/myprofile/avatar", auth, async (req, res) => {
-  try {
-    const profile = req.profile;
-    if (!profile.avatar) {
-      throw new Error();
-    }
-    res.set("Content-Type", "image/png");
-    res.send(profile.avatar);
-  } catch (e) {
-    res.status(404).send();
-  }
-});
+
 routes.get("/searchprofiles", async (req, res) => {
   try {
     const nameQ = req.query.name;
